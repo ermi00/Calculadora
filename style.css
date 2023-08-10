@@ -5,11 +5,19 @@
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    font-family: Helvetica, sans-serif, sans-serif;
+}
+
+main{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 50px;
+    flex-direction: column;
+}
+
+h1{
+    margin-bottom: 20px;
 }
 
 .div-calculadora{
@@ -29,7 +37,7 @@ body{
     font-size: 30px;
     padding: 10px;
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.068);
+    box-shadow: rgb(204, 219, 232) 3px 5px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
     margin-bottom: 10px;
     text-align: right;
     
@@ -42,10 +50,13 @@ body{
     border: 0px;
     border-radius: 5px;
     padding: 10px;
+    transition: 0.3s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .btn:hover{
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: rgba(0, 0, 0, 0.026);
+    transition: 0.3s;
 }
 
 #cero{
@@ -56,4 +67,10 @@ body{
     grid-row: span 2;
     background-color: black;
     color: white;
+    transition: 0.3s;
+}
+
+#igual:hover{
+    opacity: 60%;
+    transition: 0.3s;
 }
